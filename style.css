@@ -1,0 +1,104 @@
+* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+img{
+	    float: left;
+    margin-right: 10px; /* Adds some spacing between the image and text */
+    width: 180px; /* Adjust as needed */
+    height: 270px;
+}
+
+
+
+	/* Make body full height and center content */
+body {
+	font-family: 'Zen Kaku Gothic New', sans-serif;
+			display: flex;
+			justify-content: center; /* Centers content horizontally */
+			align-items: stretch; /* Makes content take full height */
+			height: 100vh; /* Full viewport height */
+			background-color: #eee; /* Background color for margins */
+		}
+
+		/* The content strip */
+		#wrapper {
+			width: 70%; /* Adjust this to control strip width */
+			max-width: 1000px; /* Prevent it from being too wide */
+			background-color: white; /* Background color of the strip */
+			 
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+		}
+#content {
+		display: flex;
+		/*gap: 10px;  Adds spacing between sections */
+	}
+	.nav {
+		flex: 1; /* Takes 1 part */
+		background-color: lightblue;
+		display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+	 padding: 50px;
+	}
+	.blog {
+		flex: 6; /* Takes 3 parts */
+		background-color: lightcoral;
+		padding: 20px;
+	}
+.header{
+	text-align: center;
+	letter-spacing: 4px;
+	background: rgb(239,210,39);
+background: radial-gradient(circle, rgba(239,210,39,1) 0%, rgba(206,190,95,1) 56%, rgba(192,174,50,1) 100%);
+}
+.gin-jp{
+	font-size: 140px;
+}
+.hr{
+
+    display: flex; /* Makes buttons sit side by side */
+    gap: 15px;
+    margin-top: 2px	;
+    margin-bottom: 2px;	
+	justify-content: center;
+	background: rgb(143,186,164);
+background: linear-gradient(180deg, rgba(143,186,164,1) 0%, rgba(228,226,211,1) 33%, rgba(206,190,95,1) 66%, rgba(228,226,211,1) 100%);
+}
+
+.hr button {
+    padding: 4px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: rgb(255,255,255);
+    border: 1px solid #3f3a39; /* Fixed border width */
+    border-radius: 7px;
+    transition: all 0.1s ease;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(243,192,192,1) 100%);
+}
+
+.hr button:hover,.hr button:focus {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adds effect without shifting */
+    transform: scale(1.05); /* Slightly enlarges */
+}
+
+.hr button + button{
+	border-left: none;
+}
+
+.nav button{
+	height: 60px;
+	width: 110px;
+	margin: 3px;
+	border-color: #3f3a39;
+	border-style: solid;
+	border-width:0 9px 7px 0;
+border-radius: 12px;
+	transition: 0.1s ease;
+}
+.nav button:hover, .nav button:focus{
+	border-width:1px 3px 3px 1px;
+	transition: 0.1s ease;
+ 
+}
